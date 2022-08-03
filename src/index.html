@@ -1,14 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>MAETS - Loja</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <img
+        class="logo"
+        src="./assets/img/logo-MAETS.png"
+        alt="logo"
+        href="./index.html"
+      />
+      <nav class="menu">
+        <ul>
+          <a href="#" class="item">BIBLIOTECA</a>
+          <a href="#" class="item active">LOJA</a>
+          <a href="#" class="item">CONFIGURAÇÕES</a>
+          <a href="#" class="item">CONTATO</a>
+        </ul>
+        <div class="user">
+          <img
+            class="photoUser"
+            src="./assets/img/photo-user.png"
+            alt="imagemDoUsuario"
+          />
+          <p id="username">Name</p>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="left">
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/img/super-manuel.png"
+            alt="Manuel fazendo pole dance"
+          />
+          <div class="box-content">
+            <h3 class="box-title">Super Manoel Pole Dance</h3>
+            <p class="box-description">
+              Nessa novidade da Sintendo, a cada fase você terá que ajudar o
+              Manuel a atingir boas notas no Pole Dance. O objetivo é ganhar a
+              competição de dança contra o vilão entediado e assim salvar a
+              princesa!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/img/avengers.png"
+            alt="heróis jogando Jokenpô"
+          />
+          <div class="box-content">
+            <h3 class="box-title">Avengers - Battle of the Jokenpo</h3>
+            <p class="box-description">
+              Tenho certeza que você já deve ter jogado muito papel, pedra e
+              tesoura por aí, não é mesmo? E que tal chamar os amigos para esse
+              multiplayer divertidissímo de Jokenpô. Vocês podem personalizar
+              salas e escolher o heroí que mais gosta para duelar.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/img/ursinho-pooh.png"
+            alt="Ursinho-pooh na vida real"
+          />
+          <div class="box-content">
+            <h3 class="box-title">Ursinho Pooh e o Mundo Real</h3>
+            <p class="box-description">
+              Ursinho Pooh se perdeu das fantasias e veio parar no mundo real.
+              Ajude ele a sobreviver, arrumando alimentos, um emprego e um lar
+              para ele morar. Lembrando que é temporário, só até encontrar o
+              caminho de volta pra casa. Não se apegue muito crianças!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <form>
+        <div class="input-select">
+          <label class="input-select-game" for="selectGame">
+            Selecione o jogo que deseja comprar:
+          </label>
+            <select name="selectGame" id="selectGame">
+              <option value="manuel">Super Manuel Pole Dance</option>
+              <option value="avengers">Avengers - Battle of the Jokenpo</option>
+              <option value="pooh">Ursinho Pooh e o Mundo Real</option>
+            </select>
+        </div>
+        <div class="input-number">
+          <label class="input-card-number" for="cardNumber">
+            Digite o número do cartão:
+          </label>
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              maxlength="16"
+              pattern="[0-9]+"
+              autocomplete="off"
+              placeholder="Digite o número do cartão"
+              required
+            />
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="./assets/img/Chip.svg"
+              class="chip"
+              alt="Chip de cartão"
+            />
+            <img
+              src="./assets/img/Control.svg"
+              class="control"
+              alt="Imagem de um controle de vídeo game"
+            />
+          </div>
+          <input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />
+        </div>
+          <button type="submit" id="btn-validate" class="submit-btn">
+            VALIDAR
+          </button>
+        </form>
+        <p class="textResult" id="result"></p>
+      </div>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados 2022.</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
