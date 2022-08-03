@@ -1,0 +1,230 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #1c2f3e;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background: #171a21;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+nav.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin-left: 137px;
+}
+
+.user {
+  margin-left: auto;
+  margin-right: 40px;
+  color: #ffffff;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item {
+  margin-right: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: rgba(119, 119, 119, 0.81);
+  text-decoration: none;
+  mix-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+}
+
+.item.active {
+  color: #ffffff;
+  mix-blend-mode: luminosity;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+main.main {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  margin-top: 85px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 689px;
+  height: 252px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box-img {
+  width: 220px;
+  height: 252px;
+  object-fit: none;
+  margin-left: 15px;
+}
+
+.box-title {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #ffffff;
+}
+
+.box-description {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  position: relative;
+  top: 21px;
+  padding: 15px 25px;
+}
+
+.box-description::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(10px);
+  border-radius: 5px;
+  width: 440px;
+  height: 170px;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  z-index: -1;
+}
+
+.box-content {
+  position: relative;
+  width: 440px;
+  height: 170px;
+  margin-left: 23px;
+}
+
+form {
+  text-align: center;
+}
+
+.input-select,
+.input-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-select-game,
+.input-card-number {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#cardNumber,
+#selectGame {
+  width: 339px;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 339px;
+  height: 184px;
+  background: #171a21;
+  text-align: center;
+  border-radius: 20px;
+  border: 0;
+}
+
+.card-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.clone {
+  background: transparent;
+  border: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.clone::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.submit-btn {
+  background: #42a9f4;
+  box-shadow: 0px 0px 5px #ffffff;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #15242f;
+  mix-blend-mode: normal;
+  text-shadow: 0px 0px 10px #ffffff;
+  padding: 10px;
+  width: 160px;
+  margin-top: 30px;
+}
+
+#result {
+  color: #ffffff;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  background: #171a21;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
