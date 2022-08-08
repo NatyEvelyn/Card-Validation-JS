@@ -2,7 +2,7 @@
 
     Projeto criado para gamers que desejam validar seus cartões de crédito antes de realizarem a compra de um determinado jogo.
 
-![natyevelyn github io_Card-Validation-JS_](https://user-images.githubusercontent.com/93155509/183516013-30c178e3-4a46-41e9-ab83-810e3722f811.png)
+![natyevelyn github io_Card-Validation-JS_ (1)](https://user-images.githubusercontent.com/93155509/183516758-d3e77daf-7f02-4d19-98dd-78afd80bba1f.png)
 
 #### GitHub pages: 
     
@@ -22,4 +22,4 @@
 
 https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Frgr5XFNmATGCB7E7cTaRvs%2FUntitled%3Fnode-id%3D0%253A1
 
-![Protótipo Final](https://user-images.githubusercontent.com/93155509/183158019-ede17331-3175-4cd1-a349-ee7599beb00e.jpg)
+![image](https://user-images.githubusercontent.com/93155509/183517177-6ad1a1e6-9e2a-4d60-b7c2-35c5eedf4813.png)
