@@ -7,7 +7,7 @@
 
 #### GitHub pages: 
     
-    https://natyevelyn.github.io/Card-Validation-JS/
+https://natyevelyn.github.io/Card-Validation-JS/
 
 ## Experiência do usuário:
 
@@ -23,4 +23,4 @@
 
 https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Frgr5XFNmATGCB7E7cTaRvs%2FUntitled%3Fnode-id%3D0%253A1
 
-![image](https://user-images.githubusercontent.com/93155509/183517177-6ad1a1e6-9e2a-4d60-b7c2-35c5eedf4813.png)
+![image](https://user-images.githubusercontent.com/93155509/183523217-478d4859-4fad-43f1-a8b4-b3d955e41b0a.png)
