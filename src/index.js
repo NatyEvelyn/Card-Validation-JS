@@ -1,6 +1,8 @@
 import validator from "./validator.js";
 
-let name = prompt("Bem vinda(o) a melhor loja de jogos! Por favor confirme seu nome:");
+let name = prompt(
+  "Bem vinda(o) a melhor loja de jogos! Por favor confirme seu nome:"
+);
 document.getElementById("username").innerHTML = name;
 
 const validateButton = document.getElementById("btn-validate");
@@ -14,8 +16,9 @@ cardNum.addEventListener("input", function () {
   cardNum.value = cardNum.value.replace(regex, "");
 });
 
-function cloneCardNumber(e) {
-  e.preventDefault();
+const result = document.getElementById("result");
+
+function cloneCardNumber() {
   const value = document.getElementById("cardNumber").value;
   const mask = validator.maskify(value);
 
@@ -27,18 +30,20 @@ function cardValidation(e) {
   const digValue = cardNum.value;
   const finValidation = validator.isValid(digValue);
 
-  if (digValue === "0000000000000000" || digValue === "") {
-    return (document.getElementById("result").innerHTML =
-      "Por favor, digite o número do cartão!");
+  if (
+    digValue === "" ||
+    digValue === "0000000000000000" ||
+    digValue === "000000000000000" ||
+    digValue === "00000000000000" ||
+    digValue.length <= 13
+  ) {
+    return (result.innerHTML = "Por favor, digite o número do cartão!");
   }
   if (finValidation === true) {
-    return (document.getElementById("result").innerHTML =
+    return (result.innerHTML =
       "Cartão validado com sucesso! Download em andamento.");
   }
   if (finValidation === false) {
-    return (document.getElementById("result").innerHTML =
-      "Cartão inválido. Digite novamente!");
+    return (result.innerHTML = "Cartão inválido. Digite novamente!");
   }
 }
-
-console.log(validator);
