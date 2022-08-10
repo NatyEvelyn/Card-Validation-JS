@@ -20,11 +20,7 @@ const validator = {
     for (let i = 0; i < cardNumReverse.length; i++) {
       sumTotal = sumTotal + cardNumReverse[i];
     }
-    if (sumTotal % 10 === 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return sumTotal % 10 === 0
   },
   maskify(cardNumber) {
     let maskNum = [];
